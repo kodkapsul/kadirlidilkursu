@@ -2,7 +2,7 @@ import React from "react";
 
 const aboutPage =() => {
     return ( 
-<div>Hakkımzda sayfası hazırlanıyor</div>
+<div>Hakkımızda sayfası hazırlanıyor</div>
 
     )
 }

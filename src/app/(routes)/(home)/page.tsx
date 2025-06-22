@@ -99,7 +99,7 @@ const Home = () => {
             <p className="body1">
                 Kadirli Dil Kursu asıl meslekleri öğretmenlik olan Türk ve Yabancı eğitmenlerden oluşan uzman eğitim ve yönetim kadrosu ile gelişen teknolojiyi takip ederek sektördeki saygın ve güvenilir konumunu her yıl güçlendirirken, bir yandan da profesyonel ve kurumsal yaklaşım ile kaliteli hizmet vermeyi amaç edinmiştir.
                 <br/><br/>
-                <Link className="button button2" href="hakkimizda"> Devamı </Link>
+                <Link className="button button2" href="about"> Devamı </Link>
             </p>
           </div>
           <div className="column is-hidden-touch has-text-right">
