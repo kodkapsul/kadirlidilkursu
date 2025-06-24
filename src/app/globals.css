@@ -12,7 +12,7 @@ body {
 
 a:hover {
   color: #1851B4;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .content p {
@@ -427,7 +427,7 @@ html[dir=rtl] #language-selector-modal .delete {
 }
 
 .footer a:hover {
-  text-decoration: underline;
+  color: #1851B4;
 }
 
 /* icons */
@@ -990,5 +990,6 @@ html[dir=rtl] .signal-navbar .language-selector .icon {
   font-display: swap;
   src: local("Inter-ExtraBold"), url("https://signal.org/../fonts/inter/Inter-ExtraBold.woff2") format("woff2");
 }
+
 
 /*# sourceMappingURL=ultramarine.css.map */
