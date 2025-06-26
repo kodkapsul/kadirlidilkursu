@@ -1,8 +1,6 @@
 import React from 'react'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faContactBook, faPhone, faSquareEnvelope, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
+
 import Facebook from "../../icons/facebook";
 import Instagram from "../../icons/instagram";
 import Mail from "../../icons/mail"
