@@ -5,6 +5,8 @@ import Facebook from "../../icons/facebook";
 import Instagram from "../../icons/instagram";
 import Mail from "../../icons/mail"
 import Phone from "../../icons/phone"
+import Support from "../../icons/support"
+import Headphones from "../../icons/headphones"
 
 const Footer = () => {
   return (
@@ -23,25 +25,17 @@ const Footer = () => {
           <div className="column widget widget-contact">
             <strong>İletişim</strong>
             <ul>
-              <li><Link href="mailto:iletisim@kadirlidilkursu.com" ><Mail size="1.2em"/> iletisim@kadirlidilkursu.com</Link>
-              </li>
-              <li><a href="tel:0 (535) 025 09 50" > <Phone size="1.2em"/> 0 (535) 025 09 50 </a>
-              </li>
-              <li>
-                <h6><a href="https://www.instagram.com/kadirlidilkursu/" target="_blank">
-                <Instagram size="1.2em"/> Instagram</a></h6>
-              </li>
-              
-              <li><a href="https://www.facebook.com/eraykestir" target="_blank">
-                <Facebook size="1.2em"/> Facebook</a>
-              </li>
+              <li><Link href="mailto:iletisim@kadirlidilkursu.com" ><Mail size="1.2em"/> iletisim@kadirlidilkursu.com</Link></li>
+              <li><Link href="tel:0 (535) 025 09 50" ><Phone size="1.2em"/> 0 (535) 025 09 50 </Link></li>
+              <li><a href="https://www.instagram.com/kadirlidilkursu/" target="_blank"><Instagram size="1.2em"/> Instagram</a></li>
+              <li><a href="https://www.facebook.com/eraykestir" target="_blank"> <Facebook size="1.2em"/> Facebook</a></li>
             </ul>
           </div>
 
-          <div className="column">
+          <div className="column widgget widget-contact">
             <strong>Destek</strong>
             <ul>
-              <li><a href="https://destek.kadirlidilkursu.com/">Yardım</a></li>
+              <li><a href="/contact"> <Support size="1.2em"/> Yardım</a></li>
             </ul>
           </div>
 
