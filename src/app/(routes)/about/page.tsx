@@ -1,6 +1,11 @@
 
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: 'Hakkımızda',
+};
 
 const aboutPage =() => {
     return ( 
@@ -24,10 +29,11 @@ const aboutPage =() => {
 	    <div className="container">
 		    <div className="columns">
 			    <div className="column is-6 has-text-right">
-				    <Image src="/assets/images/London-travel.png" alt="" width={443} height={687}/>
+				    <Image src="/assets/images/London-travel.png" alt="" width={542} height={687}/>
 			    </div>
           <div className="column is-6">
             <h3>Kadirli Dil Kursu</h3>
+            <br />
             <p className="decription">
             Kadirli Dil Kursu, asıl meslekleri öğretmenlik olan Türk ve Yabancı eğitmenlerden oluşan uzman eğitim ve 
             yönetim kadrosu ile gelişen teknolojiyi takip ederek sektördeki saygın ve güvenilir konumunu her yıl güçlendirirken, 

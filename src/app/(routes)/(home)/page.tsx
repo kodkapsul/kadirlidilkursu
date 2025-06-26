@@ -1,7 +1,12 @@
 import React from "react";
 import Image from 'next/image'
 import Link from "next/link";
+import { Metadata } from "next";
 //import HeroImage from 'herofoto.jpg'
+
+export const metadata: Metadata = {
+  title: 'Ana Sayfa',
+};
 
 const Home = () => {
   return (
