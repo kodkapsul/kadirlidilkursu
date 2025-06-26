@@ -5,9 +5,9 @@ import type { Metadata } from "next";
 import './index.scss'
 
 import "./globals.css";
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-config.autoAddCss = false
+//import { config } from '@fortawesome/fontawesome-svg-core'
+//import '@fortawesome/fontawesome-svg-core/styles.css'
+//config.autoAddCss = false
 
 import Header from "@/components/layout/header/Header";
 import Footer from "@/components/layout/footer/Footer";
