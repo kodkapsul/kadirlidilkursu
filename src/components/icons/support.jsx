@@ -7,7 +7,7 @@ export default function Support({
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={size} // added size here
+      width={size} // added size here #3EB75E
       height={size} // added size here
       fill={color} // added color here
       strokeWidth="2" 

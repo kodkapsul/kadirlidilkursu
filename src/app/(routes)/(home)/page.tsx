@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Link from "next/link";
 import { Metadata } from "next";
 //import HeroImage from 'herofoto.jpg'
+import Training from "../../../components/icons/training"
+import Book from "../../../components/icons/book"
+import Fileclock from "../../../components/icons/fileclock"
 
 export const metadata: Metadata = {
   title: 'Ana Sayfa',
@@ -40,6 +43,11 @@ const Home = () => {
           
           <div className="column is-one-third has-text-centered">
             <div className="box">
+              
+              <figure className="circle is-flex has-image-centered has-background-warning-50">
+                <Book stroke='white'/>
+              </figure>
+              
              {/* <img src="assets/images/features/Media.png"/> */}
               <h3>Modern ve Donanımlı Eğitim Ortamı</h3>
               <p className="body2">
@@ -53,6 +61,9 @@ const Home = () => {
           <div className="column  has-text-centered">
             <div className="box">
              {/* <img src="assets/images/features/Media.png"/> */}
+              <figure className="circle is-flex has-image-centered has-background-primary-35">
+                <Training stroke="white"/>
+              </figure>
               <h3>Başarı Odaklı Yaklaşım</h3>
               <p className="body2">
                 Öğrencilerimizin başarısı, bizim en büyük motivasyon kaynağımızdır. Hedeflerinize ulaşmanız için size her adımda destek oluyoruz. Düzenli geri bildirimler, deneme sınavları ve performans değerlendirmeleri ile gelişiminizi sürekli takip ediyoruz.
@@ -64,6 +75,9 @@ const Home = () => {
           <div className="column has-text-centered">
             <div className="box">
              {/* <img src="assets/images/features/Media.png"/> */}
+             <figure className="circle is-flex has-image-centered has-background-link-75">
+                <Fileclock stroke="white"/>
+              </figure>
               <h3>Esnek Ders Programları</h3>
               <p className="body2">
                 Yoğun iş veya okul hayatınıza uygun esnek ders programları sunarak, dil öğrenmeyi hayatınızın bir parçası haline getiriyoruz. Hafta içi ve hafta sonu seçenekleri ile zamanınızı en verimli şekilde değerlendirmenizi sağlıyoruz.
@@ -81,7 +95,8 @@ const Home = () => {
         <div className="columns is-desktop">
           <div className="column">
             
-            <Image src="images/onlineLanguage.jpg" alt="" width={300} height={300}/>
+            <Image className="card-img" src="images/onlineLanguage.jpg" alt="" width={300} height={300}/>
+            
           </div>
           <div className="column is-one-third">
             <h2>Kadirli Dil Kursu.</h2>
