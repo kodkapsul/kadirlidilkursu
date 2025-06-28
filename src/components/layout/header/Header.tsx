@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,11 +7,14 @@ const Header = () => {
     const [isActive, setisActive] = React.useState(false)
 
     return (
-    <nav className="navbar signal-navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
         <div className="container">
+            
             <div className="navbar-brand">
-                <Link className="navbar-item" href="/">KDK</Link>
-                
+                <Link className="logo" href="/">
+                  <Image className="" alt="" src="assets/images/logo.png" width={210} height={70}/>
+            </Link>
+            
                 <a 
                 onClick={() => {
                     setisActive(!isActive)

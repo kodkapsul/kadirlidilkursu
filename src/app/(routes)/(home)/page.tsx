@@ -17,7 +17,7 @@ const Home = () => {
   <section className="hero is-medium is-link" style={{ backgroundImage: 'url(images/heroMavi.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
     <div className="hero-body">
       <p className="title">Kadirli Dil Kursu</p>
-      <p className="subtitle"> </p>
+      <p className="subtitle"> Kimberly ANN </p>
     </div>
   </section>
 
