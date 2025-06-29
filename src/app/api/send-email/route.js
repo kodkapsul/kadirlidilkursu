@@ -30,6 +30,7 @@ export async function POST(req) {
       { status: 200 }
     );
   } catch (error) {
+    console.log("Hata :",error);
     return new Response(
       JSON.stringify({ message: "Error sending email", error: error.message }),
       { status: 500 }
