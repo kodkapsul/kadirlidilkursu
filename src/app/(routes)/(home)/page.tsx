@@ -9,6 +9,9 @@ import Fileclock from "../../../components/icons/fileclock"
 
 export const metadata: Metadata = {
   title: 'Ana Sayfa',
+  authors: [{ name: 'Eray KESTİR' }, { name: 'Kimberly ANN', url: 'https://kadirlidilkursu.com' }],
+  creator: 'Semih ÇINKIR',
+  publisher: 'Semih ÇINKIR',
 };
 
 const Home = () => {

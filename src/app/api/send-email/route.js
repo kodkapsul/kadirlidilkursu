@@ -36,9 +36,3 @@ export async function POST(req) {
   }
 }
 
-/*
-SMTP_HOST=mail.isimtescil.net
-SMTP_PORT=587
-SMTP_USER=iletisim@tatlisusigorta.com
-SMTP_PASS=2ZDJADAD
-*/

@@ -4,6 +4,9 @@ import React from 'react'
 
 export const metadata: Metadata = {
   title: 'İletişim',
+  authors: [{ name: 'Eray KESTİR' }, { name: 'Kimberly ANN', url: 'https://kadirlidilkursu.com' }],
+  creator: 'Semih ÇINKIR',
+  publisher: 'Semih ÇINKIR',
 };
 
 const contactPage = () => {

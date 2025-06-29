@@ -22,15 +22,11 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-
-export const metadata: Metadata = {
-  title: "Kadirli Dil Kursu",
-  description: "Kadirli Dil Kursu, her yaşa ve seviyeye uygun İngilizce eğitim programlarıyla dil öğrenmeyi kolay ve keyifli hale getiriyor. Hedefinize ulaşmak için doğru yerdesiniz.",
-  keywords: "İngilizce kursu Kadirli",
-};
 */
+
 export const metadata: Metadata = {
+  generator: 'Next.js',
+  referrer: 'origin-when-cross-origin',
   title: {
     template: '%s | Kadirli Dil Kursu',
     default: 'Kadirli Dil Kursu',
@@ -38,13 +34,13 @@ export const metadata: Metadata = {
   description: 'Kadirli Dil Kursu, her yaşa ve seviyeye uygun İngilizce eğitim programlarıyla dil öğrenmeyi kolay ve keyifli hale getiriyor. Hedefinize ulaşmak için doğru yerdesiniz.',
   //keywords: 'İngilizce kursu Kadirli',
   
+  
   //metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 };
 
 interface RootesLayoutProps {
   children: React.ReactNode
 }
-
 
 const RootLayout = ({children}: RootesLayoutProps) => {
   return (

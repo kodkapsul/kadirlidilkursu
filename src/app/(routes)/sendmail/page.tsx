@@ -3,9 +3,9 @@
 export default function EmailForm() {
   const sendEmail = async () => {
     const mailOptions = {
-      subject: "Test email from Next.js kadirlidilkursu",
+      subject: "Test email from Next.js kadirlidilkursu konu buraya",
       to: "csemih@gmail.com",
-      text: "This is a test email sent from a Next.js app deployed on Vercel using nodemailer. Deneme"
+      text: "This is a test email sent from a Next.js app deployed on Vercel using nodemailer. Deneme 1"
     };
 
     const res = await fetch("../api/send-email", {
