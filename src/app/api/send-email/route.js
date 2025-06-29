@@ -36,8 +36,3 @@ export async function POST(req) {
     );
   }
 }
-
-export async function GET() {
-  return new Response("API Çalışıyor", { status: 200 });
-}
-
