@@ -25,12 +25,11 @@ const ContactForm = () => {
           html: `<b>İsim:</b> ${form.name}<br/><b>Eposta:</b> ${form.email}<br/><b>Mesaj:</b> ${form.message}`,
         }),
       });
+      const data = await res.json();
+      setStatus(data.message + (data.error ? `: ${data.error}` : ''));
       if (res.ok) {
-        setStatus('Mesajınız başarıyla gönderildi!');
         setForm({ name: '', email: '', message: '' });
-      } else {
-        setStatus('Gönderirken bir hata oluştu.');
-      }
+      } 
     } catch {
       setStatus('Gönderirken bir hata oluştu.');
     }
