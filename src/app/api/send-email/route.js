@@ -11,11 +11,11 @@ const transporter = nodemailer.createTransport({
 });
 
 export async function POST(req) {
-  const { subject, text, to, html } = await req.json();
+  const { subject, text, html } = await req.json();
 
   const mailOptions = { 
     from: "iletisim@kadirlidilkursu.com",
-    to,
+    to: "csemih@gmail.com", // Sabit alıcı
     subject,
     text,
     html,
