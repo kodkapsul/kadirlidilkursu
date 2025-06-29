@@ -6,7 +6,6 @@ import Instagram from "../../icons/instagram";
 import Mail from "../../icons/mail"
 import Phone from "../../icons/phone"
 import Support from "../../icons/support"
-import Headphones from "../../icons/headphones"
 
 const Footer = () => {
   return (
@@ -27,8 +26,8 @@ const Footer = () => {
             <ul>
               <li><Link href="mailto:iletisim@kadirlidilkursu.com" ><Mail size="1.2em"/> iletisim@kadirlidilkursu.com</Link></li>
               <li><Link href="tel:0 (535) 025 09 50" ><Phone size="1.2em"/> 0 (535) 025 09 50 </Link></li>
-              <li><a href="https://www.instagram.com/kadirlidilkursu/" target="_blank"><Instagram size="1.2em"/> Instagram</a></li>
-              <li><a href="https://www.facebook.com/eraykestir" target="_blank"> <Facebook size="1.2em"/> Facebook</a></li>
+              <li><a href="https://www.instagram.com/kadirlidilkursu/" target="_blank" rel="nofollow"><Instagram size="1.2em"/> Instagram</a></li>
+              <li><a href="https://www.facebook.com/eraykestir" target="_blank" rel="nofollow"> <Facebook size="1.2em"/> Facebook</a></li>
             </ul>
           </div>
 

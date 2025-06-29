@@ -25,7 +25,7 @@ const Home = () => {
   <div className="container">
     <div className="columns is-centered">
       <div className="column has-text-centered">
-        <h2>Neden Kadirli Dil Kursu?</h2>
+        <h3>Neden Kadirli Dil Kursu?</h3>
         <p className="body1"> 
           Öğrencilerimizin başarısı bizim en büyük motivasyon kaynağımızdır. 
           Hedeflerinize ulaşmanız için size her adımda destek oluyoruz.

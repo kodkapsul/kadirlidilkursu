@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     default: 'Kadirli Dil Kursu',
   },
   description: 'Kadirli Dil Kursu, her yaşa ve seviyeye uygun İngilizce eğitim programlarıyla dil öğrenmeyi kolay ve keyifli hale getiriyor. Hedefinize ulaşmak için doğru yerdesiniz.',
-  keywords: 'İngilizce kursu Kadirli',
+  //keywords: 'İngilizce kursu Kadirli',
   
   //metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 };

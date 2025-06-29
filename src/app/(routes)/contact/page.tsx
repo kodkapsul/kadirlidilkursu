@@ -26,38 +26,58 @@ const contactPage = () => {
 
     <section className="section docs">
 	    <div className="container">
-		    <div className="columns">
-			    <div className="column is-full">
+		    <div className="columns is-justify-content-center">
+			    <div className="column is-6-tablet is-6-desktop is-5-widescreen is-4-fullh">
 
             <h3>Talep Gönderin</h3>
-          <div className="form">
-            <div className="field">
-              <label className="label" htmlFor="isim" >Normal input</label>
-              <div className="control has-icons-left has-icons-right">
-                <input className="input" id="isim" type="email" placeholder="Extra small" />
-                <span className="icon is-small is-left">
-                  <i className="fas fa-envelope fa-xs"></i>
-                </span>
-                <span className="icon is-small is-right">
-                  <i className="fas fa-check fa-xs"></i>
-                </span>
-              </div>
-            </div>
+          <form method="POST" action="https://herotofu.com/start" className="box p-5">
+        <label className="is-block mb-4">
+          <span className="is-block mb-2">İsim Soyisim</span>
+          <input
+            name="name"
+            type="text"
+            className="input"
+            placeholder="İsminizi giriniz"
+          />
+        </label>
 
-            <div className="field">
-              <div className="control has-icons-left has-icons-right">
-                <input className="input" id="soyisim" type="email" placeholder="Normal" />
-                <span className="icon is-left">
-                  <i className="fas fa-envelope"></i>
-                </span>
-                <span className="icon is-right">
-                  <i className="fas fa-check"></i>
-                </span>
-              </div>
-            </div>
+        <label className="is-block mb-4">
+          <span className="is-block mb-2">Eposta adresi</span>
+          <input
+            required
+            name="email"
+            type="email"
+            className="input"
+            placeholder="örn: xxxx@example.com"
+          />
+        </label>
 
+        <label className="is-block mb-4">
+          <span className="is-block mb-2">Açıklama</span>
+          <textarea
+            name="message"
+            className="textarea"
+            rows={4}
+            placeholder="Mesaj içeriği..."
+          ></textarea>
+        </label>
 
+        <div className="mb-4">
+          <button type="submit" className="button is-link px-4">Gönder</button>
+        </div>
+
+        <div>
+          <div className="is-size-7 has-text-right">
+            -
+            <a
+              href="https://herotofu.com/start"
+              className="has-text-dark"
+              target="_blank"
+              >-
+            </a>
           </div>
+        </div>
+      </form>
           </div>
         </div>
       </div>
