@@ -70,10 +70,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-
-
-
-
       <section className="section docs">
         <div className="container">
           <div className="columns is-justify-content-center">
