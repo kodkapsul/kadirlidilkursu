@@ -1,10 +1,24 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+const SITE_KEY = "6LdDUXQrAAAAAAdn181hvL5lNHvu0BeVDs8jwEnS";
 
 const ContactForm = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
   const [isSending, setIsSending] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState('');
+
+  // reCAPTCHA v3 scriptini yükle
+  useEffect(() => {
+    if (!document.getElementById('recaptcha-v3-script')) {
+      const script = document.createElement('script');
+      script.id = 'recaptcha-v3-script';
+      script.src = `https://www.google.com/recaptcha/api.js?render=${SITE_KEY}`;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -14,26 +28,40 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSending(true);
     setStatus('Gönderiliyor...');
-    try {
-      const res = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          to: 'iletisim@kadirlidilkursu.com',
-          subject: `İletişim Formu: ${form.name}`,
-          text: `İsim: ${form.name}\nEposta: ${form.email}\nMesaj: ${form.message}`,
-          html: `<b>İsim:</b> ${form.name}<br/><b>Eposta:</b> ${form.email}<br/><b>Mesaj:</b> ${form.message}`,
-        }),
+
+    // reCAPTCHA v3 token al
+    if (window.grecaptcha) {
+      window.grecaptcha.ready(() => {
+        window.grecaptcha.execute(SITE_KEY, { action: 'submit' }).then(async (token: string) => {
+          setRecaptchaToken(token);
+
+          try {
+            const res = await fetch('/api/send-email', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                to: 'iletisim@kadirlidilkursu.com',
+                subject: `İletişim Formu: ${form.name}`,
+                text: `İsim: ${form.name}\nEposta: ${form.email}\nMesaj: ${form.message}`,
+                html: `<b>İsim:</b> ${form.name}<br/><b>Eposta:</b> ${form.email}<br/><b>Mesaj:</b> ${form.message}`,
+                recaptchaToken: token,
+              }),
+            });
+            const data = await res.json();
+            setStatus(data.message + (data.error ? `: ${data.error}` : ''));
+            if (res.ok) {
+              setForm({ name: '', email: '', message: '' });
+            }
+          } catch {
+            setStatus('Gönderirken bir hata oluştu.');
+          }
+          setIsSending(false);
+        });
       });
-      const data = await res.json();
-      setStatus(data.message + (data.error ? `: ${data.error}` : ''));
-      if (res.ok) {
-        setForm({ name: '', email: '', message: '' });
-      } 
-    } catch {
-      setStatus('Gönderirken bir hata oluştu.');
+    } else {
+      setStatus('reCAPTCHA yüklenemedi. Lütfen sayfayı yenileyin.');
+      setIsSending(false);
     }
-    setIsSending(false);
   };
 
   return (
