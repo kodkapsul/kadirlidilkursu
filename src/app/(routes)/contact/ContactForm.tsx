@@ -3,6 +3,12 @@ import React, { useState, useEffect } from 'react';
 
 const SITE_KEY = "6LdDUXQrAAAAAAdn181hvL5lNHvu0BeVDs8jwEnS";
 
+declare global {
+  interface Window {
+    grecaptcha: any;
+  }
+}
+
 const ContactForm = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
