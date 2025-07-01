@@ -2,9 +2,8 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import ContactForm from './ContactForm';
 import Link from 'next/link';
-import { MapProvider } from "@/providers/map-provider";
+//import { MapProvider } from "@/providers/map-provider";
 import {Map} from "@/providers/map";
-import Book from '@/components/icons/book';
 import Mail from '@/components/icons/mail';
 import Phone from '@/components/icons/phone';
 
