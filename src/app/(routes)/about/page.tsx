@@ -1,6 +1,7 @@
 
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -13,30 +14,24 @@ export const metadata: Metadata = {
 const aboutPage =() => {
     return ( 
     <>
-    <header className="section documentation">
-    <div className="container">
-    <div className="columns is-desktop is-vcentered">
-        <div className="column is-half">
-            <h1>Kendinizi Geliştirin.</h1>
-            <p className="body1">
-                    Kadirli Dil Kursu - Hakkımızda </p>
-        </div>
-        <div className="column is-half">
-            <Image src="/assets/images/header/header-about.png" alt="" width={1136} height={726}/>
-        </div>
-    </div>
-    </div>
-    </header>
+    <section className="hero is-medium is-link" style={{backgroundImage: 'url(images/TransparentHeader.png)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+      <div className="hero-body">
+        <p className="title">Kendinizi Geliştirin.</p>
+        <p className="subtitle">
+          <Link href="/">Anasayfa</Link> - Hakkımızda 
+        </p>
+      </div>
+    </section>
 
     <section className="section docs">
 	    <div className="container">
 		    <div className="columns">
-			    <div className="column is-6 has-text-right">
+			    <div className="column is-6 has-text-centered">
 				    <Image src="/assets/images/London-travel.png" alt="" width={542} height={687}/>
 			    </div>
           <div className="column is-6">
-            <h3>Kadirli Dil Kursu</h3>
-            <br />
+            <h3 className="title">Kadirli Dil Kursu</h3>
+            
             <p className="decription">
             Kadirli Dil Kursu, asıl meslekleri öğretmenlik olan Türk ve Yabancı eğitmenlerden oluşan uzman eğitim ve 
             yönetim kadrosu ile gelişen teknolojiyi takip ederek sektördeki saygın ve güvenilir konumunu her yıl güçlendirirken, 

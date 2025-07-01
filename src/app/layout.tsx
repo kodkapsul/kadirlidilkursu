@@ -4,7 +4,8 @@ import type { Metadata } from "next";
 //import 'bulma/css/bulma.min.css';
 import './index.scss'
 
-import "./globals.css";
+//import "./globals.css";
+import "./style.css";
 //import { config } from '@fortawesome/fontawesome-svg-core'
 //import '@fortawesome/fontawesome-svg-core/styles.css'
 //config.autoAddCss = false

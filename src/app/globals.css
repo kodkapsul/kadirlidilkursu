@@ -21,7 +21,7 @@ a:hover {
   line-height: 22px;
   margin-bottom: 10px;
 }
-
+/*
 h1 {
   font-size: 60px;
   font-weight: 800;
@@ -45,7 +45,7 @@ h4 {
   font-weight: 800;
   line-height: 24px;
 }
-
+*/
 p.body1 {
   font-size: 20px;
   font-weight: 400;
@@ -97,53 +97,6 @@ a.no-underline {
   text-decoration: none;
 }
 
-.button {
-  background-color: #2c6bed;
-  border: none;
-  border-radius: 8px;
-  color: #fff;
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.button[disabled] {
-  color: #1b1b1b;
-}
-
-.button:hover {
-  background-color: #1851B4;
-  color: #fff;
-  text-decoration: none;
-}
-
-.button2 {
-  background-color: #fff;
-  border-radius: 8px;
-  border: 2px solid #2c6bed;
-  color: #2c6bed;
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.button2:hover {
-  background-color: #fff;
-  border-color: #1851B4;
-  color: #1851B4;
-}
-
-.button-white {
-  background-color: #fff;
-  color: #2C6BED;
-  font-size: 20px;
-  line-height: 28px;
-  padding: 0 20px;
-}
-
-.button-white:hover {
-  background-color: #fff;
-  color: #1851B4;
-}
 
 .trailing-chevron::after {
   content: "»";
@@ -161,119 +114,7 @@ a.no-underline {
 }
 
 /* homepage */
-.signal-logo {
-  height: 28px;
-  vertical-align: middle;
-}
-
-body.has-navbar-fixed-top,
-html.has-navbar-fixed-top {
-  padding-top: 52px;
-}
-
-.signal-navbar {
-  border-bottom: 1px solid #ebeaeb;
-}
-
-@media (min-width: 1024px) {
-  body.has-navbar-fixed-top,
-  html.has-navbar-fixed-top {
-    padding-top: 85px;
-  }
-  .signal-navbar {
-    padding: 16px 0;
-  }
-  .signal-logo {
-    height: 44px;
-  }
-}
-.signal-navbar .navbar-brand {
-  align-items: center;
-  padding-left: 18px;
-}
-
-@media (min-width: 1024px) {
-  .signal-navbar .navbar-brand {
-    padding: 0px;
-  }
-}
-.navbar-menu.is-active {
-  position: absolute;
-  width: 100%;
-}
-
-.signal-navbar .navbar-item,
-.signal-navbar .navbar-link {
-  color: #1b1b1b;
-  font-size: 16px;
-}
-
-.navbar-link:not(.is-arrowless)::after {
-  border-color: #1b1b1b;
-}
-
-.navbar-dropdown {
-  max-height: 200px;
-  overflow: scroll;
-}
-
-@media (max-width: 1024px) {
-  .navbar-link:not(.is-arrowless)::after {
-    display: none;
-  }
-}
-.signal-navbar a.navbar-item:hover {
-  background-color: inherit;
-  text-decoration: none;
-}
-
-.signal-navbar a.navbar-item:hover {
-  color: #2C6BED;
-}
-
-.signal-navbar .language-selector .icon {
-  margin-right: 4px;
-}
-
-#language-selector-modal .modal-card {
-  width: auto;
-  max-width: 800px;
-}
-
-#language-selector-modal .modal-card-head {
-  border-bottom: none;
-  background: #fff;
-}
-
-#language-selector-modal .delete {
-  position: absolute;
-  top: 20px;
-}
-
-html:not([dir=rtl]) #language-selector-modal .delete {
-  right: 20px;
-}
-
-html[dir=rtl] #language-selector-modal .delete {
-  left: 20px;
-}
-
-#language-selector-modal .modal-card-body {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#language-selector-modal .navbar-item {
-  display: inline-block;
-  width: 180px;
-}
-
-#language-selector-modal .modal-card-foot {
-  padding-top: 0;
-  background: #fff;
-  border-top: none;
-}
-
+/*
 .hero.hero-main {
   background-color: #9DBBF8;
   color: #1b1b1b;
@@ -330,6 +171,7 @@ html[dir=rtl] #language-selector-modal .delete {
   position: absolute;
   top: 0px;
 }
+*/
 
 .section.why-signal h2 {
   margin-bottom: 16px;
@@ -408,6 +250,7 @@ html[dir=rtl] #language-selector-modal .delete {
     width: 680px;
   }
 }
+ 
 .footer {
   background-color: #3C3744;
   color: #E9E9E9;
@@ -428,144 +271,6 @@ html[dir=rtl] #language-selector-modal .delete {
 
 .footer a:hover {
   color: #1851B4;
-}
-
-/* icons */
-.icon {
-  background-repeat: no-repeat;
-  height: 16px;
-  width: 16px;
-}
-
-.icon-3x {
-  height: 40px;
-  width: 40px;
-}
-
-.icon-external-link-alt {
-  background-image: url("https://signal.org/assets/images/icons/external-link-alt.svg");
-  background-position: center;
-  height: 20px !important;
-}
-
-button .icon-external-link-alt {
-  background-image: url("https://signal.org/assets/images/icons/external-blue.svg");
-}
-
-.icon-globe {
-  background-image: url("https://signal.org/assets/images/icons/solid_globe.svg");
-}
-
-.icon-facebook {
-  background-image: url("https://signal.org/assets/images/icons/facebook.svg");
-  height: 20px;
-  width: 20px;
-}
-
-.icon-twitter {
-  background-image: url("https://signal.org/assets/images/icons/twitter.svg");
-  height: 20px;
-  width: 20px;
-}
-
-.icon-instagram {
-  background-image: url("https://signal.org/assets/images/icons/instagram.svg");
-  height: 20px;
-  width: 20px;
-}
-
-.icon-eye-slash {
-  background-image: url("https://signal.org/assets/images/icons/eye-slash.svg");
-}
-
-.icon-users {
-  background-image: url("https://signal.org/assets/images/icons/users.svg");
-}
-
-.icon-dollar-sign {
-  background-image: url("https://signal.org/assets/images/icons/dollar.svg");
-}
-
-.icon-globe-americas {
-  background-image: url("https://signal.org/assets/images/icons/globe-americas.svg");
-}
-
-.icon-code {
-  background-image: url("https://signal.org/assets/images/icons/code.svg");
-}
-
-.icon-certificate {
-  background-image: url("https://signal.org/assets/images/icons/solid_certificate.svg");
-}
-
-.icon-check-bold {
-  background-image: url("https://signal.org/assets/images/icons/check-bold.svg");
-}
-
-.icon-chevron-right-bold {
-  background-image: url("https://signal.org/assets/images/icons/chevron-right-bold.svg");
-}
-
-.icon-save {
-  background-image: url("https://signal.org/assets/images/icons/save.svg");
-}
-
-.icon-x-bold {
-  background-image: url("https://signal.org/assets/images/icons/x-bold.svg");
-}
-
-/* download */
-.download h2 {
-  margin-bottom: 32px;
-}
-
-.download h3 {
-  margin-bottom: 24px;
-}
-
-.download .button {
-  margin: 15px 30px;
-}
-
-.download-window.columns {
-  background-color: #9dbbf8;
-  border-radius: 12px;
-  height: 300px;
-  margin: 0;
-  margin-bottom: 25px;
-}
-
-.download-window .column {
-  height: 100%;
-  padding-bottom: 0;
-}
-
-.download-window .download-window-wrapper {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: flex-end;
-  margin: 0 auto;
-}
-
-.download .message {
-  background: #f6f6f6;
-  margin-top: 16px;
-}
-
-.download .message-body {
-  border: none;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.download .modal-card-body {
-  padding: 0;
-}
-
-.download .modal-card-body pre {
-  text-align: left;
 }
 
 /* blog */
@@ -949,24 +654,6 @@ p.stickers {
 .account_deletion .input.account::placeholder {
   color: #5e5e5e;
 }
-
-/* rtl */
-html[dir=rtl] .signal-logo {
-  margin-left: 40px;
-}
-html[dir=rtl] .navbar-end {
-  justify-content: flex-start;
-  margin-left: 0;
-  margin-right: auto;
-}
-html[dir=rtl] .mobile-screenshots {
-  margin-right: 60px;
-}
-html[dir=rtl] .signal-navbar .language-selector .icon {
-  margin-left: 4px;
-  margin-right: 0;
-}
-
 
 /***** Forms *****/
 .form {

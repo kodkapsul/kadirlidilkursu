@@ -1,0 +1,134 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+
+
+html {
+  /*font-family: 'Urbanist', sans-serif; */
+  scroll-padding-top: 85px;
+  background-color: #fff; 
+
+}
+
+body {
+   font-family: sans-serif; 
+
+}
+.logo img {
+  width: auto;
+}
+
+.hero a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p.body1 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+p.body2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+p.body3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/*sections*/
+.section.information img {
+  border-radius: 16px;
+}
+.section.information h2 {
+  margin-bottom: 32px;
+}
+.section.information .columns {
+  flex-direction: row-reverse;
+}
+.section.information img{
+  width: 384px;
+}
+
+@media (min-width: 768px) {
+  .section.information img {
+    width: 680px;
+  }
+}
+ 
+.section.features {
+  background-color: #F6F6F6;
+}
+
+.section.features .box {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  padding: 30px;
+}
+
+.section.features h3 {
+  color: #1b1b1b;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 32px;
+  margin-top: 18px;
+  margin-bottom: 4px;
+}
+
+/*kart ikon*/
+.circle {
+    /* CIRCLE SIZE */
+    width: 90px;
+    height: 90px;
+    /*background: #ffc0c0;*/
+    /*BACKGROUND COLOR HERE*/
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+    
+.circle>svg {
+    background-repeat: no-repeat;
+    /* IMAGE SIZE */
+    width: 36px;
+    height: 36px;
+}
+
+.has-image-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+/*FOOTER*/
+.footer {
+  background-color: #3C3744;
+  color: #E9E9E9;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer strong {
+  color: #E9E9E9;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer a {
+  color: #E9E9E9;
+}
+
+.footer a:hover {
+  color: #1851B4;
+}

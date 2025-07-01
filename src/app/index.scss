@@ -1,6 +1,23 @@
+@charset "utf-8";
+// Import a Google Font
+
 @use 'bulma/sass/_index.scss';
 
+
+$gulkuru: #E7DFE0;
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+$family-sans-serif: "Nunito", sans-serif;
+$primary: $purple;
+//$link: $pink;
+
+
 :root {
-   --bulma-label-color: #3e5263;
+   //--bulma-label-color: #25282b;
+   --bulma-body-color: #1F2021;
 }
 
