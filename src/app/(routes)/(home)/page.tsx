@@ -92,7 +92,6 @@ const Home = () => {
       </div>
     </section>
 
-
     <section className="section information">
       <div className="container">
         <div className="columns is-desktop">

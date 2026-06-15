@@ -51,7 +51,7 @@ export default function ContactPage() {
                 </figure>
                 <p className="subtitle mt-3">Email/Adres</p>
                 <p>iletişim@kadirlidilkursu.com</p>
-                <p>Şehit Kansu Küçükateş Mah. 1858 Sok. No:21 </p>
+                <p>Cemalpaşa Mah. 1655 Sok. No:2/A </p>
                 <p>Osmaniye/Kadirli</p>
               </div>
             </div>

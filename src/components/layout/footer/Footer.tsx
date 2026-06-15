@@ -16,7 +16,7 @@ const Footer = () => {
 
           <div className="column is-two-fifths">
             <span><h4 className="is-size-4">Kadirli Dil Kursu</h4></span><br/> 
-            Şehit Kansu Küçükateş Mah. 1858 Sok. No:21 
+            Cemalpaşa Mah. 1655 Sok. No:2/A 
             <br/> 
             Osmaniye/Kadirli
           </div>
